@@ -3,14 +3,31 @@
 //Debug the type of data provided
 //Return the types concatenated in a single variable
 
+function moreAboutHome(address, distanceFromTown, hasNeighbour) {
+    var address, distanceFromTown, hasNeighbour;
+    let temp = typeof (address);
+    let temp1 = typeof (distanceFromTown);
+    let temp2 = typeof (hasNeighbour);
+    return temp + temp1 + temp2;
+}
+
 //Progression 2:
 //Check if the data given is of the right type
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
+
+function moreAboutKaren(String, Number, Boolean) {
+    var String, Number, Boolean;
+}
 
 //Progression 3:
 //Lily is suspicious about Karen's new friend
 //Karen tells her friend's age and even writes it down
 //Check which one those is not a number (NaN) and return that value
+
+function doesFriendExist() {
+
+
+}
 
 //Progression 4:
 //Lily gave Karen x sweets
