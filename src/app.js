@@ -16,11 +16,13 @@ function moreAboutHome(address, distanceFromTown, hasNeighbour) {
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
 
 function moreAboutKaren(parents, noOfSiblings, isNuclearFamily) {
-    var parents, noOfSiblings, isNuclearFamily;
-    if (parents.length == null && noOfSiblings.length == null && isNuclearFamily.length == null) {
+    var a = parents;
+    var b = noOfSiblings;
+    var c = isNuclearFamily;
+    if (a.length == null && b.length == null && c.length == null) {
         return false;
     }
-    if (typeof (parents) == String && typeof (noOfSiblings) == Number && typeof (isNuclearFamily) == Boolean) {
+    if (typeof (a) == "string" && typeof (b) == "number" && typeof (c) == "boolean") {
         return true;
     } else {
         return false;
@@ -76,12 +78,12 @@ function sweetTooth(totalNoOfSweets, sweetsConsumedByKaren, sweetsConsumedInNMet
 //As Lily moves closer, it gets colder. She checks the temperature on her mobile
 //It only shows in fahrenheit. Convert the data to celsius and return it.
 function convertToCelsius(fahrenheit) {
-
-    if (fahrenheit === undefined) {
+    let a = typeof fahrenheit;
+    if (a == "undefined") {
         return 'Technical Error!';
-    } else if (typeof (fahrenheit) === String) {
+    } else if (a == "string") {
         return 'Technical Error!';
-    } else if (typeof (fahrenheit) === Object) {
+    } else if (a == "object") {
         return 'Technical Error!';
     } else {
         let cel = (fahrenheit - 32) * (5 / 9);
