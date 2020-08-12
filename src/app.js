@@ -26,6 +26,7 @@ function moreAboutKaren(parents, noOfSiblings, isNuclearFamily) {
         return false;
     }
 
+
 }
 
 //Progression 3:
@@ -76,7 +77,7 @@ function sweetTooth(totalNoOfSweets, sweetsConsumedByKaren, sweetsConsumedInNMet
 //It only shows in fahrenheit. Convert the data to celsius and return it.
 function convertToCelsius(fahrenheit) {
 
-    if (typeof (fahrenheit) === undefined) {
+    if (fahrenheit === undefined) {
         return 'Technical Error!';
     } else if (typeof (fahrenheit) === String) {
         return 'Technical Error!';
